@@ -43,8 +43,10 @@ npm install @reduxjs/toolkit react-redux lucide-react
 ```
 
 Uruchom aplikację w trybie deweloperskim:
+```
 npm start
+```
+
 Otwórz http://localhost:3000 w swojej przeglądarce.
-Trawa: Odnawia się co turę o stałą wartość (chyba że wystąpi susza).
 
 Projekt zrealizowany w ramach zadania: Symulator Ekosystemu.
