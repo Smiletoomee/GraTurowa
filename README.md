@@ -5,7 +5,7 @@ Interaktywna aplikacja webowa symulująca uproszczony łańcuch troficzny przy u
 Projekt modeluje dynamiczne relacje między trzema gatunkami w zamkniętym ekosystemie. Aplikacja pozwala na obserwację procesów biologicznych takich jak konsumpcja, reprodukcja oraz wpływ losowych zdarzeń środowiskowych na populację.
 
 ### Główne mechanizmy:
-Łańcuch pokarmowy: Trawa → Królik → Wilk.
+Łańcuch pokarmowy: Trawa → Królik → Wilk.                                                       
 Reprodukcja Fibonacciego: Populacja królików przy obfitości pokarmu rośnie zgodnie z ciągiem Fibonacciego.
 Zarządzanie Energią: Każdy organizm posiada zasób energii, który zużywa na przeżycie (metabolizm) i zyskuje poprzez konsumpcję.
 Zdarzenia Losowe: Każda tura przynosi ryzyko wystąpienia suszy, pożaru, obfitości lub choroby.
