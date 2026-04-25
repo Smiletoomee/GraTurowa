@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+ Symulator Ekosystemu: Trawa, Króliki, Wilki
+Interaktywna aplikacja webowa symulująca uproszczony łańcuch troficzny przy użyciu zaawansowanego zarządzania stanem oraz paradygmatu programowania funkcyjnego.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ Opis Projektu
+Projekt modeluje dynamiczne relacje między trzema gatunkami w zamkniętym ekosystemie. Aplikacja pozwala na obserwację procesów biologicznych takich jak konsumpcja, reprodukcja oraz wpływ losowych zdarzeń środowiskowych na populację.
 
-## Available Scripts
+Główne mechanizmy:
+Łańcuch pokarmowy: Trawa → Królik → Wilk.
 
-In the project directory, you can run:
+Reprodukcja Fibonacciego: Populacja królików przy obfitości pokarmu rośnie zgodnie z ciągiem Fibonacciego.
 
-### `npm start`
+Zarządzanie Energią: Każdy organizm posiada zasób energii, który zużywa na przeżycie (metabolizm) i zyskuje poprzez konsumpcję.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Zdarzenia Losowe: Każda tura przynosi ryzyko wystąpienia suszy, pożaru, obfitości lub choroby.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ Stos Technologiczny
+React: Interfejs użytkownika.
 
-### `npm test`
+Redux Toolkit: Centralny mechanizm zarządzania stanem (Single Source of Truth).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Programowanie Funkcyjne: Przetwarzanie danych oparte na metodach .map(), .filter() oraz .reduce().
 
-### `npm run build`
+CSS: Responsywny i czytelny interfejs.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ Architektura Systemu
+Logika symulacji jest całkowicie oddzielona od warstwy prezentacji:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Store: Przechowuje aktualny stan populacji, zasobów trawy, historię oraz aktywne zdarzenia.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Reducers (Slices): Funkcje czyste przekształcające stan ekosystemu krok po kroku.
 
-### `npm run eject`
+UI Components: Odpowiadają wyłącznie za wyzwalanie akcji (dispatch) oraz wizualizację danych pobranych selektorami.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+ Funkcje Aplikacji
+Tryb Manualny: Wykonanie pojedynczej tury symulacji.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Tryb Automatyczny: Uruchomienie ciągłej symulacji z określonym interwałem czasowym.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Monitor Zdarzeń: Wyświetlanie informacji o aktualnych anomaliach pogodowych i ich wpływie na populację.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Historia Ekosystemu: Szczegółowa tabela prezentująca zmiany w populacjach na przestrzeni czasu.
 
-## Learn More
+Wskaźniki Trendu: Wizualna informacja (↑/↓), czy dana populacja rośnie czy maleje względem poprzedniej tury.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ Instalacja i Uruchomienie
+Sklonuj repozytorium:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Bash
+git clone 
+Zainstaluj zależności:
 
-### Code Splitting
+Bash
+npm install
+Uruchom aplikację w trybie deweloperskim:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Bash
+npm start
+Otwórz http://localhost:3000 w swojej przeglądarce.
+Trawa: Odnawia się co turę o stałą wartość (chyba że wystąpi susza).
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Projekt zrealizowany w ramach zadania: Symulator Ekosystemu.
