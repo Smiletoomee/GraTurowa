@@ -7,18 +7,18 @@ Projekt modeluje dynamiczne relacje między trzema gatunkami w zamkniętym ekosy
 ### Główne mechanizmy:
 Łańcuch pokarmowy: Trawa → Królik → Wilk.                                               
 Reprodukcja Fibonacciego: Populacja królików przy obfitości pokarmu rośnie zgodnie z ciągiem Fibonacciego.               
-Zarządzanie Energią: Każdy organizm posiada zasób energii, który zużywa na przeżycie (metabolizm) i zyskuje poprzez konsumpcję.                   
+Zarządzanie Energią: Każdy organizm posiada zasób energii, który zużywa na przeżycie i zyskuje poprzez konsumpcję.                   
 Zdarzenia Losowe: Każda tura przynosi ryzyko wystąpienia suszy, pożaru, obfitości lub choroby.              
 
 ### Stos Technologiczny
 React: Interfejs użytkownika.                          
-Redux Toolkit: Centralny mechanizm zarządzania stanem (Single Source of Truth).                                    
+Redux Toolkit: Centralny mechanizm zarządzania stanem -> Single Source of Truth.                                    
 Programowanie Funkcyjne: Przetwarzanie danych oparte na metodach .map(), .filter() oraz .reduce().                           
 CSS: Responsywny i czytelny interfejs.                        
 
 ### Architektura Systemu                
 Store: Przechowuje aktualny stan populacji, zasobów trawy, historię oraz aktywne zdarzenia.                  
-Reducers (Slices): Funkcje czyste przekształcające stan ekosystemu krok po kroku.                   
+Reducers / Slices: Funkcje czyste przekształcające stan ekosystemu krok po kroku.                   
 UI Components: Odpowiadają wyłącznie za wyzwalanie akcji oraz wizualizację danych pobranych selektorami.                             
 
 ### Funkcje Aplikacji
