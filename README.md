@@ -11,23 +11,22 @@ Zarządzanie Energią: Każdy organizm posiada zasób energii, który zużywa na
 Zdarzenia Losowe: Każda tura przynosi ryzyko wystąpienia suszy, pożaru, obfitości lub choroby.              
 
 ### Stos Technologiczny
-React: Interfejs użytkownika.
-Redux Toolkit: Centralny mechanizm zarządzania stanem (Single Source of Truth).
-Programowanie Funkcyjne: Przetwarzanie danych oparte na metodach .map(), .filter() oraz .reduce().
-CSS: Responsywny i czytelny interfejs.
+React: Interfejs użytkownika.                          
+Redux Toolkit: Centralny mechanizm zarządzania stanem (Single Source of Truth).                                    
+Programowanie Funkcyjne: Przetwarzanie danych oparte na metodach .map(), .filter() oraz .reduce().                           
+CSS: Responsywny i czytelny interfejs.                        
 
-### Architektura Systemu
-Logika symulacji jest całkowicie oddzielona od warstwy prezentacji:
-Store: Przechowuje aktualny stan populacji, zasobów trawy, historię oraz aktywne zdarzenia.
-Reducers (Slices): Funkcje czyste przekształcające stan ekosystemu krok po kroku.
-UI Components: Odpowiadają wyłącznie za wyzwalanie akcji (dispatch) oraz wizualizację danych pobranych selektorami.
+### Architektura Systemu                
+Store: Przechowuje aktualny stan populacji, zasobów trawy, historię oraz aktywne zdarzenia.                  
+Reducers (Slices): Funkcje czyste przekształcające stan ekosystemu krok po kroku.                   
+UI Components: Odpowiadają wyłącznie za wyzwalanie akcji oraz wizualizację danych pobranych selektorami.                             
 
 ### Funkcje Aplikacji
-Tryb Manualny: Wykonanie pojedynczej tury symulacji.
-Tryb Automatyczny: Uruchomienie ciągłej symulacji z określonym interwałem czasowym.
-Monitor Zdarzeń: Wyświetlanie informacji o aktualnych anomaliach pogodowych i ich wpływie na populację.
-Historia Ekosystemu: Szczegółowa tabela prezentująca zmiany w populacjach na przestrzeni czasu.
-Wskaźniki Trendu: Wizualna informacja (↑/↓), czy dana populacja rośnie czy maleje względem poprzedniej tury.
+Tryb Manualny: Wykonanie pojedynczej tury symulacji.               
+Tryb Automatyczny: Uruchomienie ciągłej symulacji z określonym interwałem czasowym.                    
+Monitor Zdarzeń: Wyświetlanie informacji o aktualnych anomaliach pogodowych i ich wpływie na populację.              
+Historia Ekosystemu: Szczegółowa tabela prezentująca zmiany w populacjach na przestrzeni czasu.                     
+Wskaźniki Trendu: Wizualna informacja (↑/↓), czy dana populacja rośnie czy maleje względem poprzedniej tury.                         
 
 ### Instalacja i Uruchomienie
 Sklonuj repozytorium:
