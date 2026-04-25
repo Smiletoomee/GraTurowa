@@ -25,8 +25,7 @@ UI Components: Odpowiadają wyłącznie za wyzwalanie akcji oraz wizualizację d
 Tryb Manualny: Wykonanie pojedynczej tury symulacji.               
 Tryb Automatyczny: Uruchomienie ciągłej symulacji z określonym interwałem czasowym.                    
 Monitor Zdarzeń: Wyświetlanie informacji o aktualnych anomaliach pogodowych i ich wpływie na populację.              
-Historia Ekosystemu: Szczegółowa tabela prezentująca zmiany w populacjach na przestrzeni czasu.                     
-Wskaźniki Trendu: Wizualna informacja (↑/↓), czy dana populacja rośnie czy maleje względem poprzedniej tury.                         
+Historia Ekosystemu: Szczegółowa tabela prezentująca zmiany w populacjach na przestrzeni czasu.                                         
 
 ### Instalacja i Uruchomienie
 Sklonuj repozytorium:
